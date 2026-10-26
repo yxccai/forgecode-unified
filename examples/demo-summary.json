@@ -1,0 +1,14 @@
+{
+  "mode": "scripted_learning",
+  "topic": "all",
+  "status": "verified",
+  "model_calls": 6,
+  "tool_attempts": 6,
+  "repairs": 1,
+  "tokens": null,
+  "baseline_passed": false,
+  "final_passed": true,
+  "source_repository_preserved": true,
+  "verified_on": "2026-10-26",
+  "model_type": "ScriptModel (preset replies; real tools and tests)"
+}

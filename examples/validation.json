@@ -1,0 +1,31 @@
+{
+  "date": "2026-10-26",
+  "platform": "Windows",
+  "python": "3.13.1",
+  "mechanism_tests": {
+    "command": "python -B -m unittest discover -s tests -t . -v",
+    "tests": 57,
+    "result": "OK",
+    "duration_seconds": 31.356
+  },
+  "oracle_self_check": {
+    "command": "python -B -m forgecode eval --offline",
+    "tasks": 22,
+    "passed": true
+  },
+  "scripted_demo": {
+    "command": "python -B -m forgecode learn --json",
+    "status": "verified",
+    "repairs": 1,
+    "source_repository_preserved": true
+  },
+  "real_model_task_success_rate": null,
+  "installed_packages": {
+    "langgraph": "1.1.2",
+    "langgraph-checkpoint-sqlite": "3.1.1",
+    "langchain-core": "1.6.2",
+    "langchain-openai": "1.6.2",
+    "pydantic": "2.11.7",
+    "rich": "14.3.3"
+  }
+}

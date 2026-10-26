@@ -1,0 +1,9 @@
+diff --git a/app.py b/app.py
+index eb72b61..4693ad3 100644
+--- a/app.py
++++ b/app.py
+@@ -1,2 +1,2 @@
+-def add(a, b):
+-    return a - b
++def add(a, b):
++    return a + b

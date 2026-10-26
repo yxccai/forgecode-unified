@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "forgecode-unified"
+version = "1.0.0"
+description = "A learning-first, observable and recoverable coding agent"
+requires-python = ">=3.12"
+dependencies = [
+  "rich>=13,<15", "langchain-core>=0.3,<2", "langchain-openai>=0.3,<2",
+  "langgraph>=1,<2", "langgraph-checkpoint-sqlite>=3,<4"
+]
+
+[project.scripts]
+forge = "forgecode.cli:main"
+forgecode = "forgecode.cli:batch_main"
+forgecode-eval = "forgecode.evaluation.runner:main"
+
+[tool.setuptools.packages.find]
+include = ["forgecode*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

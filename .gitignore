@@ -1,0 +1,12 @@
+.venv/
+.forgecode/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+config.local.json
+.env
+.env.*
+artifacts/
+dist/
+build/
